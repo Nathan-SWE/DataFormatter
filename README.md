@@ -51,9 +51,15 @@ Desenvolver um projeto com os seguintes requisitos:
 
 ### 📌 **Pré-requisitos**
 
-- Ter o Java instalado (**JDK** de sua preferência)
+- Ter o Java instalado (**JDK** LTS mais recente )
 
-### 🔹 **1️⃣ Compilar o código**
+### 🔹 **1️⃣ Clonar o projeto**
+
+```bash
+https://github.com/Nathan-SWE/DataFormatter.git
+```
+
+### 🔹 **2️⃣ Compilar o código**
 
 Abra o terminal na raiz do projeto e execute:
 
@@ -63,7 +69,7 @@ javac -d out -cp src src/main/Main.java
 
 Isso criará uma pasta `out` com os arquivos `.class` compilados.
 
-### 🔹 **2️⃣ Executar o programa**
+### 🔹 **3️⃣ Executar o programa**
 
 Após compilar, rode o programa com:
 
