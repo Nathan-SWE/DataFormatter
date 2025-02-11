@@ -1,5 +1,6 @@
 package services;
 
+import java.math.RoundingMode;
 import model.Funcionario;
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -63,7 +64,7 @@ public class FuncionarioService {
 
   public void imprimirSalariosEmSalariosMinimos(List<Funcionario> funcionarios) {
     funcionarios.forEach(f -> {
-      BigDecimal qtdSalariosMinimos = f.getSalario().divide(SALARIO_MINIMO, 2, BigDecimal.ROUND_HALF_UP);
+      BigDecimal qtdSalariosMinimos = f.getSalario().divide(SALARIO_MINIMO, 2, RoundingMode.HALF_UP);
       System.out.println(f.getNome() + " ganha " + qtdSalariosMinimos + " salários mínimos");
     });
   }
